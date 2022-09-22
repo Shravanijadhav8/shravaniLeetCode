@@ -45,11 +45,11 @@ class Solution:
             currDir, i, j = helper(i,j,currDir)
             if currDir == "A":
                 j += 1
-            if currDir == "B":
+            elif currDir == "B":
                 i += 1
-            if currDir == "C":
+            elif currDir == "C":
                 j -= 1
-            if currDir == "D":
+            else:
                 i -= 1
                 
         return result
