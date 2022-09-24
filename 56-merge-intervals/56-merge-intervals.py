@@ -21,7 +21,8 @@ class Solution:
                 
                 
             else:
-                i += 1
+                #i += 1
+                pass
                 
         
         if [lowerBound, upperBound] not in intervals:
