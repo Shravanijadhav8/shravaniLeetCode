@@ -23,7 +23,7 @@ class Solution:
             else:
                 i += 1
                 
-        print(f"lowerBound,upperBound:{lowerBound, upperBound}")
+        
         if [lowerBound, upperBound] not in intervals:
             intervals.append([lowerBound,upperBound])
         return intervals
