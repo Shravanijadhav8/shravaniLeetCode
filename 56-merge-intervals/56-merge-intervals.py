@@ -13,16 +13,12 @@ class Solution:
                 upperBound = max(upperBound, right)
                 del intervals[i]
                 
-            elif upperBound < intervals[i][0]:
+            else:
                 intervals.insert(i, [lowerBound, upperBound])
                 i += 1
                 lowerBound, upperBound = intervals[i][0], intervals[i][1]
                 del intervals[i]
-                
-                
-            else:
-                #i += 1
-                pass
+    
                 
         
         if [lowerBound, upperBound] not in intervals:
