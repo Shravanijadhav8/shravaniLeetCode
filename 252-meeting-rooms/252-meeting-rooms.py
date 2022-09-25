@@ -9,7 +9,7 @@ class Solution:
         i=0
         while i < len(intervals):
             left, right = intervals[i][0], intervals[i][1]
-            if (right >= lowerBound) and  (left < upperBound):
+            if (right > lowerBound) and  (left < upperBound):
                 return False
            
             else:
