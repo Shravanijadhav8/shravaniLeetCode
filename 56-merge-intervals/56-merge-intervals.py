@@ -2,7 +2,6 @@ class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         intervals.sort(key=lambda x: x[0])
         lowerBound, upperBound = intervals.pop(0)
-        flag = False
         i = 0
         
         while i < len(intervals):
