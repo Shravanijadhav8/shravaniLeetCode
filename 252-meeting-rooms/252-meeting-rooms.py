@@ -13,6 +13,8 @@ class Solution:
                 return False
            
             else:
+                #del intervals[i]
+                #if [lowerBound, upperBound] not in intervals:
                 intervals.insert(i, [lowerBound, upperBound])
                 i += 1
                 lowerBound, upperBound = intervals[i][0], intervals[i][1]
