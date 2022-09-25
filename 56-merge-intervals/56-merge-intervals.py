@@ -7,7 +7,7 @@ class Solution:
         while i < len(intervals):
             left, right = intervals[i][0], intervals[i][1]
             
-            if not(right < lowerBound) and not (left > upperBound):
+            if (right >= lowerBound) and  (left <= upperBound):
                 lowerBound = min(lowerBound, left)
                 upperBound = max(upperBound, right)
                 del intervals[i]
