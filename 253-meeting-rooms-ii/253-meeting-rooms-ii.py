@@ -1,4 +1,3 @@
-import itertools
 class Solution:
     def minMeetingRooms(self, intervals: List[List[int]]) -> int:
         startTimings = sorted(i[0] for i in intervals)
@@ -13,23 +12,6 @@ class Solution:
             usedRooms += 1
             startPointer += 1
         return usedRooms
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
 #         intervals.sort(key = lambda x:x[0])
