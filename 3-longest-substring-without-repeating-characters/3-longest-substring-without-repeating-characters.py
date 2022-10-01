@@ -5,7 +5,7 @@ class Solution:
         result = 0
         counter = 0
         
-        if s == " " or len(s) == 1:
+        if s == " ":
             return 1
         
         while p2 < len(s):
