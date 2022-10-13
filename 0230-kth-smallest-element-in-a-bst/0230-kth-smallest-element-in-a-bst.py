@@ -13,7 +13,8 @@ class Solution:
                 return
             dfs(root.left)
             nodes.append(root.val)
-            
+            if len(nodes) == k:
+                return
             dfs(root.right)
             
         dfs(root)
