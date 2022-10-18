@@ -11,9 +11,9 @@ class Solution:
             return
         
         def bfs(root, depth):
-            if len(result) < depth:
+            if len(result) == depth:
                 result.append([])
-            result[depth-1].append(root.val)
+            result[depth].append(root.val)
             if root.left:
                 bfs(root.left, depth+1)
             if root.right:
@@ -22,6 +22,6 @@ class Solution:
             
             
             
-        bfs(root, 1)
+        bfs(root, 0)
         result.reverse()
         return result
