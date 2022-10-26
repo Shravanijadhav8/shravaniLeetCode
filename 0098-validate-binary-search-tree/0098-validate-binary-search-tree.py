@@ -14,15 +14,13 @@ class Solution:
                 return False
             prev = root.val
             return dfs(root.right)
-            
-            
+        
         prev = float('-inf')
         return dfs(root)
+    
         
         
-        
-        
-        
+            
         
 #         nodes = []
         
