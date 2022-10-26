@@ -14,8 +14,5 @@ class Solution:
                 return dfs(root.left, p, q)
             elif p.val > root.val and q.val > root.val:
                 return dfs(root.right, p, q)
-            else:
-                return root
-            
-        return dfs(root, p, q)
-       
+            else: return root
+        return dfs(root,p,q)
