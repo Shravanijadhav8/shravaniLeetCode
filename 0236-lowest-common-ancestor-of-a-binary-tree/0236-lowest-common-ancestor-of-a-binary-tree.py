@@ -14,12 +14,12 @@ class Solution:
             right = lca(root.right)
             
             if left and right: 
-                print(root.val)
+                #print(root.val)
                 return root
             
             if root == p or root == q:
                 if left or right: 
-                    print(root.val)
+                    #print(root.val)
                     return root
                 else: 
                     return True
