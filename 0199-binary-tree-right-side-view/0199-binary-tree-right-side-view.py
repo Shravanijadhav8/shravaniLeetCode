@@ -14,7 +14,7 @@ class Solution:
             while(q):
                 temp = []
                 size = len(q)
-                for i in range(0,size,1):
+                for i in range(0,size):
                     cur = q[0]
                     temp.append(cur.val)
                     del q[0]
