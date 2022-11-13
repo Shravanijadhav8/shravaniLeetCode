@@ -19,10 +19,7 @@ class Solution:
             
             
         height(root,0)
-        if unBalanced: 
-            return False 
-        else: 
-            return True
+        return False if unBalanced else True
             
             
             
